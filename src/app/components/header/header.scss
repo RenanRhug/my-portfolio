@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    flex-direction: column;
+   
+    h1{
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 54px;
+    }
+
+    @media (min-width: 768) {
+        flex-direction: row-reverse;
+}
+
+}
