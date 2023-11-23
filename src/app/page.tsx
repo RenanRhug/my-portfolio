@@ -1,5 +1,11 @@
 import { Experience } from './components/experience/experience'
 import { Header } from './components/header/header'
+import { EmailIcon } from './components/icons/email-icon'
+import { GitIcon } from './components/icons/git-icon'
+import { InstaIcon } from './components/icons/insta-icon'
+import { LinkedinIcon } from './components/icons/linkedin-icon'
+import {Info} from './components/information/information'
+import { SocialBtns } from './components/social-btns/social-btns'
 
 import "./styles/home.scss"
 export default function Home() {
@@ -7,21 +13,10 @@ export default function Home() {
     <main className="container">
      <Header/>
      <Experience/>
-      <div className="infos">
-        <h3>Languages</h3>
-        <div className="languages-infos">
-          <span>EN - Basic</span>
-          <span> PT-BR - Native Speaker</span>
-        </div>
-        <h3>Education</h3>
-        <div className="educational_info">
-          <span>System analysis and development</span>
-        </div>
-        <span></span>
-      </div>
+     <Info/>
       <div className="buttons">
-        <div className="social"></div>
-      <button>Contact me</button>
+      <SocialBtns/>
+      <button className='btn-primary'>Contact me <EmailIcon/></button>
       </div>
       
     </main>
