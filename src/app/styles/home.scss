@@ -1,27 +1,32 @@
-.container{
+.container {
     padding: 40px 32px;
     display: grid;
     gap: 24px;
+    justify-items: center;
     grid-template-rows: repeat(4, auto);
     grid-template-areas: 
     "header"
     "btns"
     "experience"
     "info";
-    
+
     .buttons {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         gap: 24px;
+        grid-area: btns;
+        width: 100%;
+
         .btn-primary{
             background: linear-gradient(90deg, rgb(165, 65, 247), rgb(52, 12, 78) 93.38%);
             border-radius: 24px;
             width: 325px;
             padding: 12px;
             text-align: center;
-    
+            text-decoration: none;
+
             color: var(--text-primary);
             font-weight: 500;
             font-size: 20px;
@@ -50,7 +55,6 @@
         justify-content: space-between;  
         grid-template-areas: 
         "header info"
-        "experience nd"
-        "btns empty";
+        "experience btns";
     }
 }
